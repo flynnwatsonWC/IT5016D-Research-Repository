@@ -1,6 +1,13 @@
 """
 Hangman implementation by Kylie Ying
 
+YouTube Kylie Ying: https://www.youtube.com/ycubed 
+Twitch KylieYing: https://www.twitch.tv/kylieying 
+Twitter @kylieyying: https://twitter.com/kylieyying 
+Instagram @kylieyying: https://www.instagram.com/kylieyying/ 
+Website: https://www.kylieying.com
+Github: https://www.github.com/kying18 
+Programmer Beast Mode Spotify playlist: https://open.spotify.com/playlist/4Akns5EUb3gzmlXIdsJkPs?si=qGc4ubKRRYmPHAJAIrCxVQ 
 """
 
 import random
@@ -9,7 +16,7 @@ from hangman_visual import lives_visual_dict
 import string
 
 
-def get_valid_word(words): # grabs the words from words.py
+def get_valid_word(words):
     word = random.choice(words)  # randomly chooses something from the list
     while '-' in word or ' ' in word:
         word = random.choice(words)
@@ -18,10 +25,10 @@ def get_valid_word(words): # grabs the words from words.py
 
 
 def hangman():
-    word = get_valid_word(words) # chooses a word from the list
-    word_letters = set(word)  # finds letters in the word
+    word = get_valid_word(words)
+    word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
-    used_letters = set()  # user guesses here
+    used_letters = set()  # what the user has guessed
 
     lives = 7
 
