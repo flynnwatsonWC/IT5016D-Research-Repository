@@ -16,7 +16,7 @@ from hangman_visual import lives_visual_dict
 import string
 
 
-def get_valid_word(words):
+def get_valid_word(words):  #grabs words from words.py
     word = random.choice(words)  # randomly chooses something from the list
     while '-' in word or ' ' in word:
         word = random.choice(words)
@@ -24,7 +24,7 @@ def get_valid_word(words):
     return word.upper()
 
 
-def hangman():
+def hangman(): #
     word = get_valid_word(words)
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
@@ -32,7 +32,7 @@ def hangman():
 
     lives = 7
 
-    # getting user input
+    # gets user input
     while len(word_letters) > 0 and lives > 0:
         # letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
