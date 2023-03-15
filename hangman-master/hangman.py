@@ -17,14 +17,14 @@ import string
 
 
 def get_valid_word(words):  #grabs words from words.py
-    word = random.choice(words)  # randomly chooses something from the list
+    word = random.choice(words)  
     while '-' in word or ' ' in word:
-        word = random.choice(words)
+        word = random.choice(words) # randomly chooses a word from the list
 
     return word.upper()
 
 
-def hangman(): #
+def hangman(): #defines
     word = get_valid_word(words)
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
