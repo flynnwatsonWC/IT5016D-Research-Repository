@@ -1,5 +1,6 @@
 import random
 
+#This section is for you to guess the computer's number.
 def guess(x): #
     random_number = random.randint(1, x)
     guess = 0
@@ -10,8 +11,9 @@ def guess(x): #
         elif guess > random_number:
             print('Sorry, guess again. Too high.') # possible outcome
 
-    print(f'Yay, congrats. You have guessed the number {random_number} correctly!!')
+    print(f'Yay, you have guessed the number {random_number} correctly!!') #Tells you you've guessed the correct number.
 
+#This section is for the computer to guess your number.
 def computer_guess(x):
     low = 1
     high = x
@@ -27,7 +29,7 @@ def computer_guess(x):
         elif feedback == 'l':
             low = guess + 1
 
-    print(f'Yay! The computer guessed your number, {guess}, correctly!')
+    print(f'Yay! The computer guessed your number, {guess}, correctly!') #Tells you the computer has guessed your number.
 
 
 guess(10)
