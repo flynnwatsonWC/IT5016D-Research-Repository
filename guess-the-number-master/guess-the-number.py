@@ -1,8 +1,8 @@
 import random
 
 #This section is for you to guess the computer's number.
-def guess(x): #
-    random_number = random.randint(1, x)
+def guess(x):
+    random_number = random.randint(1, x) #Creates a boundary on what number can be guessed up to, e.g 100
     guess = 0
     while guess != random_number:
         guess = int(input(f'Guess a number between 1 and {x}: ')) # a box where you write your answer
@@ -32,4 +32,4 @@ def computer_guess(x):
     print(f'Yay! The computer guessed your number, {guess}, correctly!') #Tells you the computer has guessed your number.
 
 
-guess(10)
+guess(100)
