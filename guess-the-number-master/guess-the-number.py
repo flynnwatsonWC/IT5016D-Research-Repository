@@ -1,6 +1,7 @@
+#This section is for you to guess the computer's number.
+
 import random
 
-#This section is for you to guess the computer's number.
 def guess(x):
     random_number = random.randint(1, x) #Creates a boundary on what number can be guessed up to, e.g 100
     guess = 0
@@ -15,7 +16,12 @@ def guess(x):
 
 guess(100)
     
+
+    
 #This section is for the computer to guess your number.
+
+import random
+
 def computer_guess(x):
     low = 1 #Sets the lowest number the computer can guess.
     high = x #Sets the highest number the computer can guess.
