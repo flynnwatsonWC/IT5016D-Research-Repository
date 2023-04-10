@@ -12,7 +12,7 @@ RESET = "\u001b[0m"
 
 print("WORDLE")
 
-correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE"]) #words that will be randomly chosen for the game
+correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE", "ABYSS", "YACHT", "TODAY", "BEAST", "MOURN", "PILCH"]) #words that will be randomly chosen for the game
 for _ in range(6): # You get six chances to guess
     guess = input("Please guess. > ").upper() #.upper() changes the word to uppercase automatically.
 
