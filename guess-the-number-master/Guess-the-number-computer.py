@@ -1,3 +1,5 @@
+#This section is for the computer to guess your number.
+
 import random
 
 def computer_guess(x):
