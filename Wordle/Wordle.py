@@ -4,33 +4,36 @@
 # Topics: input, slices, loops, ANSI color codes
 
 import os, random
-os.system("clear")
+os.system("clear") #clears the screen ("clear" works for Mac and Linux)
 
+#Colour Codes
 BG_GREEN = "\u001b[42m" #letters in green indicates the word is the right letter in the right place.
 BG_YELLOW = "\u001b[43m" #letters in yellow indicates the word is a right letter, but it's in the wrong place.
-RESET = "\u001b[0m"
+RESET = "\u001b[0m" #letters that aren't colour coded are letters that are not in the word.
 
+#Game Title
 print("WORDLE")
 
-correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE", "ABYSS", "YACHT", "TODAY", "BEAST", "MOURN", "PILCH"]) #words that will be randomly chosen for the game
+#Preparing and starting the game
+correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE", "ABYSS", "YACHT", "TODAY", "BEAST", "MOURN", "PILCH"]) #A list of words that will be randomly chosen for the game.
 for _ in range(6): # You get six chances to guess
-    guess = input("Please guess. > ").upper() #.upper() changes the word to uppercase automatically.
+    guess = input("Please guess. > ").upper() #Asks you to guess a word. (.upper() changes the word to uppercase automatically.)
 
     # Checks each letter
     for i in range(0, 5):
         if guess[i]==correct[i]:
-            print(f"{BG_GREEN}{guess[i]}{RESET}", end="")
+            print(f"{BG_GREEN}{guess[i]}{RESET}", end="") #This tells you that one or more letters are correct, and in the correct place.
         elif guess[i] in correct:
-            print(f"{BG_YELLOW}{guess[i]}{RESET}", end="")
+            print(f"{BG_YELLOW}{guess[i]}{RESET}", end="")#This tells you that one or more letters are correct, but in the wrong place. 
         else:
-            print(guess[i], end="")
+            print(guess[i], end="") #end="" makes the word to stay on one line.
             
     print()
 
-    # If the guess is correct
+    # If you guessed the word.
     if guess == correct:
         print("You win!")
         exit()
- #If the guess is incorrect
+ #If you didn't guess the word.
 print("You lose!")
 print(f"The correct word was {correct}.")
