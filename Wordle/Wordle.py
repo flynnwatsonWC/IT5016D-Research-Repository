@@ -6,18 +6,17 @@
 import os, random
 os.system("clear")
 
-BG_GREEN = "\u001b[42m"
-BG_YELLOW = "\u001b[43m"
+BG_GREEN = "\u001b[42m" #letters in green indicates the word is the right letter in the right place.
+BG_YELLOW = "\u001b[43m" #letters in yellow indicates the word is a right letter, but it's in the wrong place.
 RESET = "\u001b[0m"
 
 print("WORDLE")
 
-correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE"])
-# You get six chances to guess
-for _ in range(6):
-    guess = input("Please guess. > ").upper()
+correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE"]) #words that will be randomly chosen for the game
+for _ in range(6): # You get six chances to guess
+    guess = input("Please guess. > ").upper() #.upper() changes the word to uppercase automatically.
 
-    # Check each letter
+    # Checks each letter
     for i in range(0, 5):
         if guess[i]==correct[i]:
             print(f"{BG_GREEN}{guess[i]}{RESET}", end="")
@@ -28,10 +27,10 @@ for _ in range(6):
             
     print()
 
-    # Check if the guess is correct
+    # If the guess is correct
     if guess == correct:
         print("You win!")
         exit()
-        
+ #If the guess is incorrect
 print("You lose!")
 print(f"The correct word was {correct}.")
