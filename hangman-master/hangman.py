@@ -41,11 +41,11 @@ def hangman(): #defines the main functions of the game.
         # what the current word is (ie W - R D)
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print(lives_visual_dict[lives])
-        print('Current word: ', ' '.join(word_list)) #shows the word with the letters you've correctly guessed.
+        print('Current word: ', ' '.join(word_list)) #shows the letters you've correctly guessed.
 
         user_letter = input('Guess a letter: ').upper() #This asks you to guess a letter.
         if user_letter in alphabet - used_letters:
-            used_letters.add(user_letter) #This adds letters that are not in the word, and adds them to a used letters list.
+            used_letters.add(user_letter) #This takes letters that are not in the word, and adds them to a used letters list once they've been guessed.
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
                 print('')
