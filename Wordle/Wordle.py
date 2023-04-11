@@ -15,7 +15,7 @@ RESET = "\u001b[0m" #letters that aren't colour coded are letters that are not i
 print("WORDLE")
 
 #Preparing and starting the game
-correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE", "ABYSS", "YACHT", "TODAY", "BEAST", "MOURN", "PILCH"]) #A list of words that will be randomly chosen for the game.
+correct = random.choice(["SHAKE", "SHARE", "PANIC", "AMUSE", "SHADE", "ABYSS", "YACHT", "ZIPPY", "ABACK", "TODAY", "BEAST", "ZESTY", "ALIVE", "ANGRY", "QUACK", "SCENT", "SAFER", "SHORT", "TENSE", "RINSE", "BORED", "TIGHT", "RIGHT," "NIGHT", "FIGHT", "MOURN", "HEAVY", "JUICY", "LAUGH", "LEGAL", "LEVEL", "LIGHT", "LOOKS", "CHEAP", "DAILY", "DIRTY", "PILCH" "EARLY", "HANDY",]) #A list of words that will be randomly chosen for the game.
 for _ in range(6): # You get six chances to guess
     guess = input("Please guess. > ").upper() #Asks you to guess a word. (.upper() changes the word to uppercase automatically.)
 
