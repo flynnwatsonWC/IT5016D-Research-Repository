@@ -21,3 +21,11 @@ One way I do this is by going a walk on farmland which I live right next to, and
 
 Although, some people may argue that this is being lazy and more time could've been spent doing work, but applying this method into my daily life has had outstanding effects on my learning as well as my work too. As a person who often gets distracted for short periods of time, I see this as an oppourtunity to take in everything that I've learned so far, then after a few minutes I continue with my work with a clear and refreshed mind that's ready to learn again. I strongly believe that if we all simply do absolutely nothing more often, or take more short breaks if needed, we can all become better learners and thinkers.
 
+
+References:
+
+https://github.com/kying18/hangman/blob/master/hangman.py
+https://github.com/kying18/guess-the-number
+https://github.com/wynand1004/Projects/tree/master/Wordle
+
+
