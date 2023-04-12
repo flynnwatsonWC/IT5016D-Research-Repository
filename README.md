@@ -1,9 +1,12 @@
 # IT5015D-Research-Repository
 
+
 Projects:
 
 The projects I chose to research are games because I want to have some fun playing a different version of these games, especially when I coded one all by myself and had a huge feeling of accomplishment completing it.
 The games I chose as part of my research includes a number guessing game for the computer or a person to play, Hangman, Three Cup Monte, and my favourite, Wordle.
+
+
 
 
 
