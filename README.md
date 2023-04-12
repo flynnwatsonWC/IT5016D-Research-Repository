@@ -11,6 +11,7 @@ The games I chose as part of my research includes a number guessing game for the
 
 
 
+
 Do you take regular breaks away from your screen?
 
 Yes I do. I try to get out of my chair every 30 minutes, or an hour if I'm extra busy. There are a few different ways I take breaks, one of them is doing high-knees up to my hips, I do this for 3-5 minutes.
