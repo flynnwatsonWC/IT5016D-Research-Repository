@@ -26,6 +26,7 @@ Although, some people may argue that this is being lazy and more time could've b
 References:
 
 https://github.com/kying18/hangman/blob/master/hangman.py
+
 https://github.com/kying18/guess-the-number
 https://github.com/wynand1004/Projects/tree/master/Wordle
 
