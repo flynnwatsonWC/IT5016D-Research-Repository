@@ -25,19 +25,20 @@ def check_guess(mylist,guess):
         print(mylist)
 
 retry = True
-while retry: 
-    #Initial list
-    mylist = [' ', 'O',' ']
+while retry: #If the player wants to play again, this part will run as well as the part that resets the game at the bottom.
+    
+    
+    mylist = [' ', 'O',' '] #This is the initial list
 
-    #Shuffles the list
-    mixedup_list = shuffle_list(mylist)
+    mixedup_list = shuffle_list(mylist)  #This shuffles the list
 
-    #The players guess
-    guess = player_guess()
+    
+    guess = player_guess() #This is for the players guess.
 
-    #Checks the guess
-    check_guess(mixedup_list,guess)
-
+    
+    check_guess(mixedup_list,guess) #This checks the guess.
+    
+   #This resets the game
     answer = input("Press Y to play again\n").lower()
     if answer == 'y':
         continue
