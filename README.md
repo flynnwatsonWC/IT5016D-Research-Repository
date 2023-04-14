@@ -35,7 +35,7 @@ I think having seven tabs open is a fair amount, taking into consideration that 
 
 What is an IDE?
 
-An IDE (Integrated Development Environment) is a software application that enables programmers to develop software with programming languages such as Python, C++ and more. With a built-in source code editor and useful tools and features to increase workflow efficiency, IDE's help streamline the process in writing code. This includes writing, testing and debugging. Some IDE's have a limited amount of progamming languages you can code on, whether it would be for a mobile or desktop application. Some common IDE's include Microsoft Visual Studio, Xcode, Android Studio, Atom and IDLE.
+An IDE (Integrated Development Environment) is a software application that enables programmers to develop software with programming languages such as Python, C++ and more. With a built-in source code editor, and useful tools and features to increase workflow efficiency, IDE's help streamline the process in writing code. This includes writing, testing and debugging. Some IDE's have a limited amount of progamming languages you can code on, whether it would be for a mobile or desktop application. Some common IDE's include Microsoft Visual Studio, Xcode, Android Studio, Atom and IDLE.
 
 
 Project References:
